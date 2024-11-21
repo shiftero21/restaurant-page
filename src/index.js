@@ -1,6 +1,5 @@
 console.log("prueba");
-import {populateContent} from './homepage';
-populateContent();
+
 
 import rstImage from "./salonPanoramico.jpg";
 
