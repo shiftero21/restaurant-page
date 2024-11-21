@@ -22,11 +22,7 @@ elementos.forEach(({ tag, text }) => {
   elemento.textContent = text;
   content.appendChild(elemento);
 });
+
 }
 
-import rstImage from "./salon-panoramico.jpg";
 
-const imgResto = document.createElement("img");
-imgResto.src = rstImage;
-
-document.content.appendChild(imgResto);
