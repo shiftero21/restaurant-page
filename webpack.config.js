@@ -28,7 +28,7 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              modules: true // Esta es la diferencia clave
+              modules: false
             }
           }
         ]
