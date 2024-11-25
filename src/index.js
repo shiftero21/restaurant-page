@@ -3,7 +3,7 @@ console.log("prueba");
 import { homeTab } from "./home";
 import { menuTab } from "./menu";
 import { contactTab } from "./contact";
-
+import "./styles/home.css" 
 document.addEventListener('DOMContentLoaded', homeTab);
 document.querySelectorAll('button').forEach(button => {
   button.addEventListener('click', (e) => {
