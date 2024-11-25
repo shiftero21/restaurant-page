@@ -15,10 +15,7 @@ export function menuTab () {
   document.getElementById('contenido').appendChild(menuPage);
   //add plates may be a grid
   const menuGrid = document.createElement('div');
-  menuGrid.style.display = 'grid';
-  menuGrid.style.gridTemplateColumns = 'repeat(2, 1fr)';
-  menuGrid.style.gap = '2rem';
-  menuGrid.style.marginTop = '2rem';
+  menuGrid.classList.add('menu-grid');
 
   const plate1 = document.createElement('div');
   plate1.innerHTML = `
@@ -53,9 +50,7 @@ export function menuTab () {
   `;
 
   [plate1, plate2, plate3, plate4].forEach(plate => {
-    plate.style.padding = '1rem';
-    plate.style.backgroundColor = '#fff';
-    plate.style.borderRadius = '8px';
+    plate.classList.add('menu-item');
     menuGrid.appendChild(plate);
   });
 
