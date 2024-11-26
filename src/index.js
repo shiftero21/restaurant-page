@@ -15,13 +15,13 @@ function handleTabClick(tabId) {
   clearContent();
   
   switch(tabId) {
-    case 'home':
+    case 'home-btn':
       homeTab();
       break;
-    case 'menu':
+    case 'menu-btn':
       menuTab();
       break;
-    case 'contact':
+    case 'contact-btn':
       contactTab();
       break;
     default:
