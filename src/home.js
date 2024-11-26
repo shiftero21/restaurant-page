@@ -7,10 +7,12 @@ export function homeTab () {
   homeTitle.textContent = 'HOME';
   homePage.appendChild(homeTitle);
   const homeDescription = document.createElement('p');
-  homeDescription.textContent = '¡Descubre el sabor que transforma cada comida en una experiencia inolvidable! En [Nombre del Restaurante], combinamos ingredientes frescos, recetas únicas y un ambiente acogedor para ofrecerte lo mejor de la gastronomía.';
+  homeDescription.textContent = '¡Descubre el sabor que transforma cada comida en una experiencia inolvidable! En [Nombre del Restaurante] ademas, combinamos ingredientes frescos, recetas únicas y un ambiente acogedor para ofrecerte lo mejor de la gastronomía.';
   homePage.appendChild(homeDescription);
-  document.getElementById('contenido').appendChild(homePage);
   const imgResto = document.createElement("img");
   imgResto.src = rstImage;
-  document.getElementById('contenido').appendChild(imgResto);
+  imgResto.classList.add('home-image');
+  homePage.appendChild(imgResto);
+  document.getElementById('contenido').appendChild(homePage);
+
 }
