@@ -123,7 +123,7 @@ button:active {
 }
 
 .menu-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .menu-item img {
@@ -187,4 +187,16 @@ button:active {
   .menu-item .price {
     font-size: 1rem;
   }
+}
+
+.home-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#home {
+  max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el contenedor en la página */
 }
