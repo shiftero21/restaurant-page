@@ -12,7 +12,7 @@ export function menuTab () {
   const menuDescription = document.createElement('p');
   menuDescription.textContent = 'Desde clásicos reinventados hasta platos contemporáneos, nuestro menú está diseñado para deleitar todos los paladares. Ya sea que busques un almuerzo rápido, una cena especial o un momento para compartir con amigos, encontrarás el platillo perfecto aquí.';
   menuPage.appendChild(menuDescription);
-  document.getElementById('contenido').appendChild(menuPage);
+
   //add plates may be a grid
   const menuGrid = document.createElement('div');
   menuGrid.classList.add('menu-grid');
@@ -55,5 +55,6 @@ export function menuTab () {
   });
 
   menuPage.appendChild(menuGrid);
+  document.getElementById('contenido').appendChild(menuPage);
 
 }
